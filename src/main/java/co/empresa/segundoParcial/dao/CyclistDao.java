@@ -12,7 +12,7 @@ import co.empresa.segundoParcial.util.Conexion;
 
 public class CyclistDao {
 	private Conexion conexion;
-	private static final String INSERT_CYCLIST_SQL = "INSERT INTO CYCLIST (name,email,birthDate,id_contry,id_team) VALUES (?,?,?)";
+	private static final String INSERT_CYCLIST_SQL = "INSERT INTO CYCLIST (name,email,birthDate,id_contry,id_team) VALUES (?,?,?,?,?)";
 	private static final String DELETE_CYCLIST_ByID = "DELETE CYCLIST WHERE id = ?";
 	private static final String UPDATE_CYCLIST_SQL = "UPDATE CYCLIST SET name = ?,email = ?, birthDate = ?, id_contry = ?, id_team = ?";
 	private static final String SELECT_CYCLIST_ByID = "SELECT * FROM CYCLIST WHERE id = ? ";

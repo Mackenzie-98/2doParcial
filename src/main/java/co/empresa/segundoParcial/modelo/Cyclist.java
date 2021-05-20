@@ -16,4 +16,11 @@ public class Cyclist implements Serializable {
 	private Date birthDate;
 	private String id_country;
 	private String id_team;
+	public Cyclist(String name,String email,Date birthDate,String id_country,String id_team) {
+		this.name = name;
+		this.email = email;
+		this.birthDate = birthDate;
+		this.id_country = id_country;
+		this.id_team = id_team;
+	}
 }

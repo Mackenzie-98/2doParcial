@@ -24,7 +24,6 @@ public class TeamDao {
 		try {
 			PreparedStatement ps = conexion.setPreparedStatment(INSERT_TEAM_SQL);
 			ps.setString(1, t.getName());
-			ps.setString(2, t.get);
 			ps.setString(2, t.getId_country());
 			conexion.execute();
 		} catch (SQLException e) {
